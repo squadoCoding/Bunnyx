@@ -8,10 +8,7 @@ const port = 300;
 app.engine("handlebars", exphbs.engine());
 app.set("view engine", "handlebars");
 app.use(express.static("./static"));
-
-app.get("/", (req, res) => {
-  res.render("Bunnyx");
-});
+app.use(require("./commandsRes"));
 
 app.listen(port, () => {
   console.log(`running at http://localhost:${port}`);

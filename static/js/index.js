@@ -20,8 +20,20 @@ bunnyxEars.onstart = () => {
 bunnyxEars.onresult = (event) => {
   const current = event.resultIndex; //? index of our spoken text
   const command = event.results[current][0].transcript; //? command I have given
-  console.log(command);
-  bunnyxSpeak(command);
+  console.log(command); // for debuging
+  // sending request to server to get the answer
+  const ans = fetch(`/giveCmd`, {
+    headers: {
+      myCommand: command,
+    },
+  });
+  ans
+    .then((ansJson) => {
+      return ansJson.json();
+    })
+    .then((finalAns) => {
+      bunnyxSpeak(finalAns.ans);
+    });
 };
 //* when I am not speaking any thing
 bunnyxEars.onend = () => {

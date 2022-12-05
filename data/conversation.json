@@ -1,0 +1,28 @@
+{
+  "converssation": {
+    "hellow": {
+      "message": ["I am here", "Yes, Bunnyx here.", "Hi I am here"],
+      "question": false,
+      "rand": true
+    },
+    "hello": {
+      "message": ["I am here", "Yes, Bunnyx here.", "Hi I am here"],
+      "question": false,
+      "rand": true
+    },
+    "hellow bunnyx": {
+      "message": "Hellow, to whome am I talking",
+      "question": true,
+      "rand": false,
+      "type": "user data",
+      "expAnsField": "name"
+    },
+    "bunnyx hellow": {
+      "message": "Hellow, to whome am I talking",
+      "question": true,
+      "rand": false,
+      "type": "user data",
+      "expAnsField": "name"
+    }
+  }
+}
