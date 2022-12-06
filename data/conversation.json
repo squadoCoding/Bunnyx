@@ -1,28 +1,34 @@
 {
   "converssation": {
     "hellow": {
-      "message": ["I am here", "Yes, Bunnyx here.", "Hi I am here"],
+      "message": [
+        "Hi, hellow, bolo.",
+        "Yes, Bunnyx here.",
+        "Hellow, your super intelligent and helpful friend banix here."
+      ],
       "question": false,
-      "rand": true
+      "rand": true,
+      "isCommand": false
     },
     "hello": {
-      "message": ["I am here", "Yes, Bunnyx here.", "Hi I am here"],
+      "message": [
+        "Hi, hellow, bolo.",
+        "Yes, Bunnyx here.",
+        "Hellow, your super intelligent and helpful friend banix here."
+      ],
       "question": false,
-      "rand": true
+      "rand": true,
+      "isCommand": false
     },
-    "hellow bunnyx": {
-      "message": "Hellow, to whome am I talking",
-      "question": true,
-      "rand": false,
-      "type": "user data",
-      "expAnsField": "name"
-    },
-    "bunnyx hellow": {
-      "message": "Hellow, to whome am I talking",
-      "question": true,
-      "rand": false,
-      "type": "user data",
-      "expAnsField": "name"
+    "you are the best": {
+      "message": [
+        "Thank you, I know that.",
+        "Thanks for compliment/",
+        "That is why I am banix"
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": false
     }
   }
 }

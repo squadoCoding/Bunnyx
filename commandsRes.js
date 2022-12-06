@@ -26,15 +26,21 @@ router.get("/giveCmd", (req, res) => {
         let i = 0;
         // looping through all the keys of conversation training to compare with the user command
         for (let cmd in conversationTraining.converssation) {
-          if (cmd.includes(userCmd)) {
+          if (userCmd.includes(cmd)) {
             // if there are multiple amswers of the question then we can give answer randomly from an array of ansewers for that particular question
-            if (conversationTraining.converssation[cmd].rand) {
+            if (
+              conversationTraining.converssation[cmd].rand &&
+              !conversationTraining.converssation[cmd].isCommand && // if the current command is not a command on which some action should be taken
+              !conversationTraining.converssation[cmd].question
+            ) {
               let randIndex = Number.parseInt(
                 Math.random() *
                   conversationTraining.converssation[cmd].message.length
               );
               res.json({
                 ans: conversationTraining.converssation[cmd].message[randIndex],
+                isCommand: false,
+                question: false,
               });
               break;
             }
