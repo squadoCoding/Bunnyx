@@ -1,20 +1,248 @@
 {
   "converssation": {
-    "hellow": {
+    "shut down yourself": {
+      "message": ["Okey, I will take a nap.", "Bye,bye!"],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "speechRecOff"
+    },
+    "shutdown yourself": {
+      "message": ["Okey, I will take a nap.", "Bye,bye!"],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "speechRecOff"
+    },
+    "don't open google": {
+      "message": "ok I will not.",
+      "question": false,
+      "rand": false,
+      "isCommand": false
+    },
+    "open google": {
+      "message": ["one movement..", "Here is google"],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "openWebsite",
+      "url": "https://google.com"
+    },
+    "don't open my github profile": {
+      "message": "ok I will not.",
+      "question": false,
+      "rand": false,
+      "isCommand": false
+    },
+    "open my github profile": {
       "message": [
-        "Hi, hellow, bolo.",
-        "Yes, Bunnyx here.",
-        "Hellow, your super intelligent and helpful friend banix here."
+        "Ok, happy coding!!",
+        "Sure..create something new!!",
+        "Github is opening... dunya pe impact dalne walee projects banao, good luck!!"
       ],
       "question": false,
       "rand": true,
+      "isCommand": true,
+      "cmdType": "openWebsite",
+      "url": "https://github.com/squadoCoding"
+    },
+    "don't open github profile": {
+      "message": "ok I will not.",
+      "question": false,
+      "rand": false,
       "isCommand": false
     },
-    "hello": {
+    "open github profile": {
       "message": [
-        "Hi, hellow, bolo.",
-        "Yes, Bunnyx here.",
-        "Hellow, your super intelligent and helpful friend banix here."
+        "Ok, happy coding!!",
+        "Sure..create something new!!",
+        "Github is opening... dunya pe impact dalne walee projects banao, good luck!!"
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "openWebsite",
+      "url": "https://github.com/squadoCoding"
+    },
+    "don't open github": {
+      "message": "ok I will not.",
+      "question": false,
+      "rand": false,
+      "isCommand": false
+    },
+    "open github": {
+      "message": [
+        "Ok, happy coding!!",
+        "Sure..create something new!!",
+        "Github is opening... dunya pe impact dalne walee projects banao, good luck!!"
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "openWebsite",
+      "url": "https://github.com"
+    },
+    "don't open my replete profile": {
+      "message": "ok I will not.",
+      "question": false,
+      "rand": false,
+      "isCommand": false
+    },
+    "open my replete profile": {
+      "message": [
+        "Ok, happy coding!!",
+        "Sure..mehnat karo, code well and keep exploring.",
+        "Replit is opening... consistancy ki bahut value hai, aise he aage badhte raho!!"
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "openWebsite",
+      "url": "https://replit.com/@squadoCoding"
+    },
+    "don't open my replit profile": {
+      "message": "ok I will not.",
+      "question": false,
+      "rand": false,
+      "isCommand": false
+    },
+    "open my replit profile": {
+      "message": [
+        "Ok, happy coding!!",
+        "Sure..mehnat karo, code well and keep exploring.",
+        "Replit is opening... consistancy ki bahut value hai, aise he aage badhte raho!!"
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "openWebsite",
+      "url": "https://replit.com/@squadoCoding"
+    },
+    "don't open replete profile": {
+      "message": "ok I will not.",
+      "question": false,
+      "rand": false,
+      "isCommand": false
+    },
+    "open replete profile": {
+      "message": [
+        "Ok, happy coding!!",
+        "Sure..mehnat karo, code well and keep exploring.",
+        "Replit is opening... consistancy ki bahut value hai, aise he aage badhte raho!!"
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "openWebsite",
+      "url": "https://replit.com/@squadoCoding"
+    },
+    "don't open replit profile": {
+      "message": "ok I will not.",
+      "question": false,
+      "rand": false,
+      "isCommand": false
+    },
+    "open replit profile": {
+      "message": [
+        "Ok, happy coding!!",
+        "Sure..mehnat karo, code well and keep exploring.",
+        "Replit is opening... consistancy ki bahut value hai, aise he aage badhte raho!!"
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "openWebsite",
+      "url": "https://replit.com/@squadoCoding"
+    },
+    "don't open replete": {
+      "message": "ok I will not.",
+      "question": false,
+      "rand": false,
+      "isCommand": false
+    },
+    "open replete": {
+      "message": [
+        "Ok, happy coding!!",
+        "Sure..mehnat karo, code well and keep exploring.",
+        "Replit is opening... consistancy ki bahut value hai, aise he aage badhte raho!!"
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "openWebsite",
+      "url": "https://replit.com"
+    },
+    "don't open replit": {
+      "message": "ok I will not.",
+      "question": false,
+      "rand": false,
+      "isCommand": false
+    },
+    "open replit": {
+      "message": [
+        "Ok, happy coding!!",
+        "Sure..mehnat karo, code well and keep exploring.",
+        "Replit is opening... consistancy ki bahut value hai, aise he aage badhte raho!!"
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "openWebsite",
+      "url": "https://replit.com"
+    },
+    "don't open youtube": {
+      "message": "ok I will not.",
+      "question": false,
+      "rand": false,
+      "isCommand": false
+    },
+    "open youtube": {
+      "message": [
+        "Ok, but distractions se buch kar rehna. apne goal pe focus karo",
+        "Here is youtube...but remember, sab ke pass 24 ghante he hai lekin farak iss se padta hai kon unka kaise istamal karta hai.",
+        "Go, go and learn something new...but don't waste your precious time on useless content."
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "openWebsite",
+      "url": "https://youtube.com"
+    },
+    "open facebook": {
+      "message": [
+        "Ok, but distractions se buch kar rehna. apne goal pe focus karo",
+        "Here is facebook...but remember, sab ke pass 24 ghante he hai lekin farak iss se padta hai kon unka kaise istamal karta hai."
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "openWebsite",
+      "url": "https://facebook.com"
+    },
+
+    "thank you": {
+      "message": "Don't say thank you, friends are for helping each other",
+      "question": false,
+      "rand": false,
+      "isCommand": false
+    },
+    "what are you doing?": {
+      "message": "I am waiting to help you.",
+      "question": false,
+      "rand": false,
+      "isCommand": false
+    },
+    "what are you doing": {
+      "message": "I am waiting to help you.",
+      "question": false,
+      "rand": false,
+      "isCommand": false
+    },
+    "how are you": {
+      "message": [
+        "mai too bahut acchi hun.",
+        "mai intizar kar rahi hun ki kab haam saathme milkar kuch naya build karenge.",
+        "I am fine, great and excited."
       ],
       "question": false,
       "rand": true,
@@ -23,9 +251,89 @@
     "you are the best": {
       "message": [
         "Thank you, I know that.",
-        "Thanks for compliment/",
-        "That is why I am banix"
+        "Thanks for compliment",
+        "That is why I am Banix."
       ],
+      "question": false,
+      "rand": true,
+      "isCommand": false
+    },
+    "what's your name": {
+      "message": [
+        "mai hun aap ki super intelligent virtual friend, mai madad karsakti hoo iss poore laptop ko control karne ke alava bhi bahut saari cheesen karne me aur mera naam Banix hai.",
+        "Mera naam Banix hai aur mai eak bahut intelligent virtual friend hoon, mera kaam hai aap ko appne goal tak pahunchne me madad karna, aap ko motivated rakhna aur aap ko company dena.",
+        "I am Banix, your virtual friend. I will be always there to company you and help you to mentain dicipleane and achieve your goals."
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": false
+    },
+    "what is your name": {
+      "message": [
+        "mai hun aap ki super intelligent virtual friend, mai madad karsakti hoo iss poore laptop ko control karne ke alava bhi bahut saari cheesen karne me aur mera naam Banix hai.",
+        "Mera naam Banix hai aur mai eak bahut intelligent virtual friend hoon, mera kaam hai aap ko appne goal tak pahunchne me madad karna, aap ko motivated rakhna aur aap ko company dena.",
+        "I am Banix, your virtual friend. I will be always there to company you and help you to mentain dicipleane and achieve your goals."
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": false
+    },
+    "what are you": {
+      "message": [
+        "mai hun aap ki super intelligent virtual friend, mai madad karsakti hoo iss poore laptop ko control karne ke alava bhi bahut saari cheesen karne me aur mera naam Banix hai.",
+        "Mera naam Banix hai aur mai eak bahut intelligent virtual friend hoon, mera kaam hai aap ko appne goal tak pahunchne me madad karna, aap ko motivated rakhna aur aap ko company dena.",
+        "I am Banix, your virtual friend. I will be always there to company you and help you to mentain decepleane and achieve your goals."
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": false
+    },
+    "who are you": {
+      "message": [
+        "mai hun aap ki super intelligent virtual friend, mai madad karsakti hoo iss poore laptop ko control karne ke alava bhi bahut saari cheesen karne me aur mera naam Banix hai.",
+        "Mera naam Banix hai aur mai eak bahut intelligent virtual friend hoon, mera kaam hai aap ko appne goal tak pahunchne me madad karna, aap ko motivated rakhna aur aap ko company dena.",
+        "I am Banix, your virtual friend. I will be always there to company you and help you to mentain dicipline and achieve your goals."
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": false
+    },
+    "hellow": {
+      "giveInitialStatus": true,
+      "message": [
+        "Hi, hellow, bolo.",
+        "Yes, Banix here.",
+        "Hellow, your super intelligent and helpful friend Banix here."
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": false
+    },
+    "hello": {
+      "giveInitialStatus": true,
+      "message": [
+        "Hi, hellow, bolo.",
+        "Yes, Banix here.",
+        "Hellow, your super intelligent and helpful friend Banix here."
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": false
+    },
+    "hi": {
+      "giveInitialStatus": true,
+      "message": [
+        "Hi, hellow, bolo.",
+        "Yes, Banix here.",
+        "Hellow, your super intelligent and helpful friend Banix here."
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": false
+    },
+    "get out": {
+      "giveInitialStatus": false,
+      "message": ["First you..", "Pehl aap"],
       "question": false,
       "rand": true,
       "isCommand": false
