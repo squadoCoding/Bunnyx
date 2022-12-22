@@ -1,5 +1,6 @@
 const express = require("express");
 const fs = require("fs");
+const shutCompDown = require("shutdown-computer");
 
 const router = express.Router();
 
@@ -25,7 +26,6 @@ router.get("/giveCmd", (req, res) => {
       } else {
         conversationTraining = JSON.parse(conversationTraining); // parsing json file
 
-        let i = 0;
         let wasAbleToAnswer = false;
         // looping through all the keys of conversation training to compare with the user command
         for (let cmd in conversationTraining.converssation) {
@@ -157,11 +157,36 @@ router.get("/giveCmd", (req, res) => {
                   question: false,
                   cmdType: "speechRecOff",
                 });
+              } else if (
+                conversationTraining.converssation[cmd].cmdType == "shutDown"
+              ) {
+                wasAbleToAnswer = true;
+                res.json({
+                  ans: conversationTraining.converssation[cmd].message[
+                    randIndex
+                  ],
+                  isCommand: false,
+                  question: false,
+                });
+                setTimeout(() => {
+                  shutCompDown.shutDownComputer(); // this is how we will shutdown the computer
+                }, 10000);
               }
+              break;
+            } else if (
+              conversationTraining.converssation[cmd].isCommand && // if the current command is a command on which some action should be taken
+              conversationTraining.converssation[cmd].cmdType == "speakTime"
+            ) {
+              wasAbleToAnswer = true;
+
+              res.json({
+                isCommand: true,
+                question: false,
+                cmdType: "speakTime",
+              });
               break;
             }
           }
-          i++;
         }
         if (!wasAbleToAnswer) {
           res.json({

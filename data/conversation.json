@@ -219,6 +219,81 @@
       "cmdType": "openWebsite",
       "url": "https://facebook.com"
     },
+    "tell me about time": {
+      "question": false,
+      "isCommand": true,
+      "cmdType": "speakTime"
+    },
+    "what about time": {
+      "question": false,
+      "isCommand": true,
+      "cmdType": "speakTime"
+    },
+    "what's time": {
+      "question": false,
+      "isCommand": true,
+      "cmdType": "speakTime"
+    },
+    "what's time now": {
+      "question": false,
+      "isCommand": true,
+      "cmdType": "speakTime"
+    },
+    "what is time": {
+      "question": false,
+      "isCommand": true,
+      "cmdType": "speakTime"
+    },
+    "what is time now": {
+      "question": false,
+      "isCommand": true,
+      "cmdType": "speakTime"
+    },
+
+    "shut down the laptop": {
+      "message": [
+        "ok, bye! bye!",
+        "shutting the computer down",
+        "shutting down the computer"
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "shutDown"
+    },
+    "shut down the computer": {
+      "message": [
+        "ok, bye! bye!",
+        "shutting the computer down",
+        "shutting down the computer"
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "shutDown"
+    },
+    "shut the laptop down": {
+      "message": [
+        "ok, bye! bye!",
+        "shutting the computer down",
+        "shutting down the computer"
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "shutDown"
+    },
+    "shut the computer down": {
+      "message": [
+        "ok, bye! bye!",
+        "shutting the computer down",
+        "shutting down the computer"
+      ],
+      "question": false,
+      "rand": true,
+      "isCommand": true,
+      "cmdType": "shutDown"
+    },
 
     "thank you": {
       "message": "Don't say thank you, friends are for helping each other",

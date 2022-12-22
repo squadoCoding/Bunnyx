@@ -42,6 +42,13 @@ bunnyxEars.onresult = (event) => {
         } else if (finalAns.cmdType == "speechRecOff") {
           bunnyxSpeak(finalAns.ans, true); //* this will is down the ears of bunnyx
           main.classList.add("shutDown");
+          mic.classList.remove("openClock");
+        } else if (finalAns.cmdType == "speakTime") {
+          mic.classList.add("openClock");
+          bunnyxSpeak(hContainer.innerText + " : " + mContainer.innerText);
+          setTimeout(() => {
+            mic.classList.remove("openClock");
+          }, 5000);
         }
       }
     });
@@ -85,11 +92,19 @@ document.addEventListener("keydown", (e) => {
     earsDown();
   }
 });
-mic.addEventListener("click", () => {
-  if (mic.classList.contains("speakingMic")) {
+mic.addEventListener("click", (e) => {
+  if (
+    mic.classList.contains("speakingMic") &&
+    e.target.getAttribute("id") != "openClock" &&
+    e.target.getAttribute("id") != "closeClock"
+  ) {
     stopRec = true;
     earsDown();
-  } else {
+  } else if (
+    !mic.classList.contains("speakingMic") &&
+    e.target.getAttribute("id") != "openClock" &&
+    e.target.getAttribute("id") != "closeClock"
+  ) {
     earsUp();
   }
 });
