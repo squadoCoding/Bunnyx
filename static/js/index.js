@@ -91,6 +91,14 @@ document.addEventListener("keydown", (e) => {
     stopRec = true;
     earsDown();
   }
+  //* if user will press "f" then we will all enter the full screen
+  else if (e.key == "f" || e.key == "F") {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+    } else {
+      document.exitFullscreen();
+    }
+  }
 });
 mic.addEventListener("click", (e) => {
   if (

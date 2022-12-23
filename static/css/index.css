@@ -146,3 +146,39 @@ main {
 .openClock {
   transform: rotate(180deg);
 }
+
+#alarms {
+  background-color: rgb(32, 87, 216);
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  border-radius: 10px;
+  position: absolute;
+  left: 3vw;
+}
+
+#alarms h2 {
+  margin-bottom: 10px;
+}
+
+.alarmItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(69, 119, 235);
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.alarmItem:hover {
+  background-color: rgb(121, 161, 255);
+}
+
+.alarmItem div input {
+  accent-color: rgb(44, 204, 248);
+  cursor: pointer;
+}
