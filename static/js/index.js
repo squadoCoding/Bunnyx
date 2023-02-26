@@ -40,7 +40,7 @@ bunnyxEars.onresult = (event) => {
           bunnyxSpeak(finalAns.ans);
           window.open(finalAns.url);
         } else if (finalAns.cmdType == "speechRecOff") {
-          bunnyxSpeak(finalAns.ans, true); //* this will is down the ears of bunnyx
+          bunnyxSpeak(finalAns.ans, true); //* this will down the ears of bunnyx
           main.classList.add("shutDown");
           mic.classList.remove("openClock");
         } else if (finalAns.cmdType == "speakTime") {

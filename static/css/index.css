@@ -58,6 +58,10 @@ body {
   background: linear-gradient(#034971, #011b56);
 }
 
+.invisible {
+  display: none !important;
+}
+
 main {
   width: 100%;
   height: 100vh;
@@ -147,6 +151,24 @@ main {
   transform: rotate(180deg);
 }
 
+#applications {
+  position: absolute;
+}
+
+.application {
+  cursor: pointer;
+  padding: 20px;
+}
+
+.application:hover {
+  transform: scale(120%);
+}
+
+#openAlarms svg {
+  width: 40px;
+  color: aquamarine;
+}
+
 #alarms {
   background-color: rgb(32, 87, 216);
   color: white;
@@ -156,11 +178,29 @@ main {
   width: 30vw;
   border-radius: 10px;
   position: absolute;
-  left: 3vw;
+  left: 6vw;
 }
 
 #alarms h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#alarms #alarmOptions {
   margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#alarms #alarmOptions span {
+  padding: 2px 10px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#alarms #alarmOptions span:hover {
+  background-color: rgb(69, 119, 235);
 }
 
 .alarmItem {
@@ -179,6 +219,8 @@ main {
 }
 
 .alarmItem div input {
-  accent-color: rgb(44, 204, 248);
+  accent-color: rgb(44, 248, 153);
   cursor: pointer;
+  width: 25px;
+  height: 25px;
 }
